@@ -1,7 +1,7 @@
-del burned\.
-del composed\.
-del defense\.
-del highlight\.
-del hls\.
-del post\.
-del sidelin\.
+del \clipping\burned\.
+del \clipping\composed\.
+del \clipping\defense\.
+del \clipping\highlight\.
+del \clipping\hls\.
+del \clipping\post\.
+del \clipping\sidelin\.
