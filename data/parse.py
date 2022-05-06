@@ -5,7 +5,9 @@ import xml.etree.ElementTree as ET
 
 rows = []
 
-tree = ET.parse('.\\data\\sounders.xml')
+match = '\\Code\\ClippingBatch\\data\\data'
+
+tree = ET.parse(match + '.xml')
 root = tree.getroot()
 
 for instance in root.findall('.//instance'):
@@ -33,7 +35,7 @@ for instance in root.findall('.//instance'):
     fields = ['ID', 'start', 'end', 'code', 'team', 'action', 'half', 'pos_x', 'pos_y']
   
     # writing to csv file
-    with open('.\\data\\sounders.csv', 'w', newline='') as csvfile:
+    with open(match + '.csv', 'w', newline='') as csvfile:
   
         # creating a csv dict writer object
         writer = csv.DictWriter(csvfile, fieldnames = fields, dialect='excel')
